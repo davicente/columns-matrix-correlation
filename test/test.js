@@ -23,7 +23,6 @@ describe('Matrix columns linear correlation', () => {
     
     for(let column of correlationResults) {
       for(let value of column) {
-        console.log(value);
         expect(value).to.be.within(-1.000001, 1.0000001); 
       }
     }
